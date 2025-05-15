@@ -218,3 +218,11 @@ module:
   imports:
     - path: github.com/google/docsy
       disable: false
+
+
+
+menu:
+  main:
+    - name: "Membership"
+      weight: 40
+      url: "http://g.hiroi.top:8080"
