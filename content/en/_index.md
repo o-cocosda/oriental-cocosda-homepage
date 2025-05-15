@@ -3,27 +3,24 @@ title: OCOCOSDA
 ---
 
 {{< blocks/cover title="Welcome to Oriental COCOSDA!" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
+<!-- <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
   Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
+</a> -->
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://ococosda2025.id/">
+  OCOCOSDA 2025 <i class="fas fa-arrow-alt-circle-right ms-2 "></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-  Download <i class="fab fa-github ms-2 "></i>
-</a>
-<p class="lead mt-5">Porridge temperature assessment &mdash; in the cloud!</p>
+<p class="lead mt-5">Oriental Voice in the World!</p>
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
 
-{{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
+{{% blocks/lead color="gray" %}}
+Oriental COCOSDA (O-COCOSDA), the Oriental chapter of COCOSDA, an acronym of the International Committee for the Coordination and Standardisation of Speech Databases and Assessment Techniques, was established in 1997.
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
+The purpose of O-COCOSDA is to exchange ideas, share information, and discuss regional matters on the creation, utilization, and dissemination of spoken language corpora of oriental languages and also on the assessment methods of speech recognition/synthesis systems as well as promote speech research on oriental languages.
 {{% /blocks/lead %}}
 
-
+<!-- 
 {{% blocks/section color="dark" type="row" %}}
 {{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
 The Goldydocs UI now shows chair size metrics by default.
@@ -42,13 +39,13 @@ For announcement of latest features etc.
 {{% /blocks/feature %}}
 
 
-{{% /blocks/section %}}
+{{% /blocks/section %}} -->
 
 
-{{% blocks/section %}}
+<!-- {{% blocks/section %}}
 This is the second section
 {.h1 .text-center}
-{{% /blocks/section %}}
+{{% /blocks/section %}} -->
 
 
 {{% blocks/section type="row" %}}
@@ -71,7 +68,7 @@ For announcement of latest features etc.
 {{% /blocks/section %}}
 
 
-{{% blocks/section %}}
+<!-- {{% blocks/section %}}
 This is the another section
 {.h1 .text-center}
-{{% /blocks/section %}}
+{{% /blocks/section %}} -->
