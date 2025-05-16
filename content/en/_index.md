@@ -9,7 +9,7 @@ title: OCOCOSDA
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://ococosda2025.id/">
   OCOCOSDA 2025 <i class="fas fa-arrow-alt-circle-right ms-2 "></i>
 </a>
-<p class="lead mt-5">Oriental Voice in the World!</p>
+<p class="lead mt-5">Oriental Voice!</p>
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
