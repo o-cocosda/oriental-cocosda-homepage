@@ -19,3 +19,8 @@ Add styles or override variables from the theme here.
 .taxo-categories{
     display: none;
 }
+
+.td-navbar .navbar-brand svg{
+    width: fit-content;
+    height: fit-content;
+}
