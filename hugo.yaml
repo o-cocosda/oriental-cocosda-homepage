@@ -224,5 +224,5 @@ module:
 menu:
   main:
     - name: "Membership"
-      weight: 40
+      weight: 0
       url: "http://g.hiroi.top:8080"

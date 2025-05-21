@@ -1,7 +1,7 @@
 ---
 title: About Oriental COCOSDA
 linkTitle: About
-menu: {main: {weight: 10}}
+menu: {main: {weight: 1}}
 ---
 
 {{% blocks/cover title="About Oriental COCOSDA" image_anchor="bottom" height="full" %}}

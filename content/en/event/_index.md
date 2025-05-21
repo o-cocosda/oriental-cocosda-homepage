@@ -1,6 +1,6 @@
 ---
 title: Event
-menu: {main: {weight: 30}}
+menu: {main: {weight: 10}}
 cascade:
     - type: "blog"
     - toc_root: true
