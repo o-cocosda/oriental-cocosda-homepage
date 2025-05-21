@@ -1,7 +1,11 @@
 ---
-title: Blog
+title: Event
 menu: {main: {weight: 30}}
-# hide_summary: true
+cascade:
+    - type: "blog"
+    - toc_root: true
+    # _target:
+    # path: "/events/**"
 ---
 
 This is the **blog** section. It has two categories: News and Releases.
