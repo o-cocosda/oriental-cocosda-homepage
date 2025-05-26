@@ -59,16 +59,22 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      - name: Clone 2018
-        uses: actions/checkout@v4
-        with:
-          repository: o-cocosda/2018 # 替换为你要拉取的公共仓库路径 (用户名/仓库名)
-          path: ./public/archive/2018 # 将仓库克隆到工作目录下的 'public-repo' 文件夹
-      - name: Clone 2024
-        uses: actions/checkout@v4
-        with:
-          repository: o-cocosda/2024 # 替换为你要拉取的公共仓库路径 (用户名/仓库名)
-          path: ./public/archive/2024 # 将仓库克隆到工作目录下的 'public-repo' 文件夹
+      - name: Clone
+        run: |
+          cd ./public
+          mkdir archive
+          cd archive
+          git clone https://github.com/o-cocosda/2018.git
+          git clone https://github.com/o-cocosda/2024.git
+      #  uses: actions/checkout@v4
+      #  with:
+      #    repository: o-cocosda/2018 # 替换为你要拉取的公共仓库路径 (用户名/仓库名)
+      #    path: ./public/archive/2018 # 将仓库克隆到工作目录下的 'public-repo' 文件夹
+      #- name: Clone 2024
+      #  uses: actions/checkout@v4
+      #  with:
+      #    repository: o-cocosda/2024 # 替换为你要拉取的公共仓库路径 (用户名/仓库名)
+      #    path: ./public/archive/2024 # 将仓库克隆到工作目录下的 'public-repo' 文件夹
       
       - name: Deploy to public branch # 步骤4: 将生成的 public 目录部署到 public 分支
         uses: peaceiris/actions-gh-pages@v3 # 使用 peaceiris/actions-gh-pages 动作进行部署
