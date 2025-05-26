@@ -59,13 +59,6 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      - name: Clone
-        run: |
-          cd ./public
-          mkdir archive
-          cd archive
-          git clone https://github.com/o-cocosda/2018.git
-          git clone https://github.com/o-cocosda/2024.git
       #  uses: actions/checkout@v4
       #  with:
       #    repository: o-cocosda/2018 # 替换为你要拉取的公共仓库路径 (用户名/仓库名)
@@ -82,7 +75,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }} # 使用 GitHub 提供的 token 进行认证
           publish_dir: ./public                     # 指定要发布的目录，Hugo 的输出默认就在 public 目录下
           publish_branch: public                    # 指定要发布到的目标分支，这里是 public 分支
-          force_orphan: true                        # 强制清除 public 分支的旧内容，只保留当前构建的内容
+          force_orphan: false                        # 强制清除 public 分支的旧内容，只保留当前构建的内容
           commit_message: "Deploy Hugo site to public branch [skip ci]" # 提交信息，并添加 [skip ci] 防止无限循环触发
       
       #- name: Upload artifact
