@@ -11,7 +11,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -58,7 +58,16 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+
+      - name: Deploy to public branch # 步骤4: 将生成的 public 目录部署到 public 分支
+        uses: peaceiris/actions-gh-pages@v3 # 使用 peaceiris/actions-gh-pages 动作进行部署
         with:
-          branch: public
+          github_token: ${{ secrets.GITHUB_TOKEN }} # 使用 GitHub 提供的 token 进行认证
+          publish_dir: ./                     # 指定要发布的目录，Hugo 的输出默认就在 public 目录下
+          publish_branch: public                    # 指定要发布到的目标分支，这里是 public 分支
+          force_orphan: true                        # 强制清除 public 分支的旧内容，只保留当前构建的内容
+          commit_message: "Deploy Hugo site to public branch [skip ci]" # 提交信息，并添加 [skip ci] 防止无限循环触发
+      #- name: Upload artifact
+      #  uses: actions/upload-pages-artifact@v3
+      #  with:
+      #    path: ./public
