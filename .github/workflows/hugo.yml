@@ -67,6 +67,18 @@ jobs:
           publish_branch: public                    # 指定要发布到的目标分支，这里是 public 分支
           force_orphan: true                        # 强制清除 public 分支的旧内容，只保留当前构建的内容
           commit_message: "Deploy Hugo site to public branch [skip ci]" # 提交信息，并添加 [skip ci] 防止无限循环触发
+      - name: Clone 2018
+        uses: actions/checkout@v4
+        with:
+          repository: o-cocosda/2018 # 替换为你要拉取的公共仓库路径 (用户名/仓库名)
+          path: ./public/archive/2018 # 将仓库克隆到工作目录下的 'public-repo' 文件夹
+      - name: Clone 2024
+        uses: actions/checkout@v4
+        with:
+          repository: o-cocosda/2024 # 替换为你要拉取的公共仓库路径 (用户名/仓库名)
+          path: ./public/archive/2024 # 将仓库克隆到工作目录下的 'public-repo' 文件夹
+      
+      
       #- name: Upload artifact
       #  uses: actions/upload-pages-artifact@v3
       #  with:
