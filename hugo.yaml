@@ -48,7 +48,7 @@ languages:
     languageName: English
     title: Oriental COCOSDA
     params:
-      description: OCOCOSDA is a conference on speech and language processing
+      description: OCOCOSDA is an association on coordination and standardization of speech data for Asia Pacific region
   # cSpell:disable
   # 'no':
   #   languageName: Norsk
