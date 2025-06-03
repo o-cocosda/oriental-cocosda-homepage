@@ -6,7 +6,7 @@ menu: {main: {weight: 10}}
 
 {{% blocks/cover title="Strategy" image_anchor="bottom" height="full" %}}
 
-The technical interests of Cocosda are organised on both a regional and a topical basis. Six major regions of the world are represented on the central committee by regional rapporteurs, and each agreed topic domain is represented by a topic domain rapporteur. Interaction between regional and topical rapporteurs provides that basis for the promotion and coordination activities of Cocosda to be informed by both the local and global expertise.
+The technical interests of Cocosda are organised on both a country and a topical basis. Each country is represented on the central committee by country rapporteurs, and each agreed topic domain is represented by a topic domain rapporteur. Interaction between regional and topical rapporteurs provides that basis for the promotion and coordination activities of Cocosda to be informed by both the local and global expertise.
 
 {{% /blocks/cover %}}
 
